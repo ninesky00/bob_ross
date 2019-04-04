@@ -28,8 +28,8 @@ class BobTest < Minitest::Test
   def test_it_can_return_colors
     skip
     bob = Bob.new
-    paint_1 = mock("paint 1")
-    paint_2 = mock("paint 2")
+    paint_1 = Paint.new("Alizarin Crimson")
+    paint_2 = Paint.new("Van Dyke Brown")
     bob.add_paint(paint_1)
     bob.add_paint(paint_2)
 
