@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/bob'
+require './lib/paint'
 
 class BobTest < Minitest::Test
   def test_it_exists
@@ -14,7 +15,6 @@ class BobTest < Minitest::Test
   end
 
   def test_it_can_have_paint
-    skip
     bob = Bob.new
     paint_1 = Paint.new("Alizarin Crimson")
     paint_2 = Paint.new("Van Dyke Brown")
@@ -26,7 +26,6 @@ class BobTest < Minitest::Test
   end
 
   def test_it_can_return_colors
-    skip
     bob = Bob.new
     paint_1 = Paint.new("Alizarin Crimson")
     paint_2 = Paint.new("Van Dyke Brown")
@@ -37,7 +36,6 @@ class BobTest < Minitest::Test
   end
 
   def test_it_can_total_paint_amount
-    skip
     bob = Bob.new
     paint_1 = Paint.new("Alizarin Crimson", 42)
     paint_2 = Paint.new("Van Dyke Brown", 25)
